@@ -1,3 +1,9 @@
+<style>
+    body {
+        font-family: 'Nunito', sans-serif;
+    }
+</style>
+
 Adicionar novo pet:
 
 <form action="/pets" method="post">

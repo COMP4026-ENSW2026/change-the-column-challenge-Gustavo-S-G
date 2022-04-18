@@ -1,3 +1,9 @@
+<style>
+    body {
+        font-family: 'Nunito', sans-serif;
+    }
+</style>
+
 <h1>{{ $pet->name }}</h1>
 
 <ul>

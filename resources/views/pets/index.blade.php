@@ -1,3 +1,9 @@
+<style>
+    body {
+        font-family: 'Nunito', sans-serif;
+    }
+</style>
+
 <h1>Pets!!!</h1>
 
 Seus pets:
