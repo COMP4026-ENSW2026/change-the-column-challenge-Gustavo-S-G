@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
@@ -23,6 +24,12 @@ Route::get('/users', function(){
     return App\Models\User::all();
 });
 
+Route::get('/login', function(){
+    $user = User::first();
+    return $user->createToken('name'); 
+});
+
 // Route::group('v1', function(){
-    Route::resource('pets', PetsController::class);
+//     Route::resource('pets', PetsController::class);
+//         ->middleware('auth:sanctum');
 // });
